@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#333333"
+    tools:context=".TicTacToe">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Spiel starten"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="30dp"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignRight="@+id/linearLayout3"
+        android:layout_alignEnd="@+id/linearLayout3"
+        android:layout_below="@+id/linearLayout3">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/status"
+            android:layout_gravity="center">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:id="@+id/r00"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".30"
+                    android:textSize="30dp"
+                    android:text="---" />
+
+                <Button
+                    android:id="@+id/r01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".30"
+                    android:text="---"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/r02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".30"
+                    android:text="---"
+                    android:textSize="30dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:id="@+id/r10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".30"
+                    android:text="---"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/r11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".30"
+                    android:text="---"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/r12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".30"
+                    android:text="---"
+                    android:textSize="30dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:id="@+id/r20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".30"
+                    android:text="---"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/r21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".30"
+                    android:text="---"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/r22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".30"
+                    android:text="---"
+                    android:textSize="30dp" />
+
+            </TableRow>
+
+        </TableLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/action_neuesSpiel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClickNeuesSpiel"
+            android:text="Neues Spiel"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="false"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_alignTop="@+id/editspielernamen" />
+
+    </LinearLayout>
+
+</RelativeLayout>
